@@ -3,4 +3,5 @@ cat alive.txt| httpx -ms '"status":404,"error":"Not Found","path":"/"'|anew apac
 or
 cat alive.txt| httpx -ms '"status":500,"error":"Internal Server Error"'|anew apachespringboothttpx500.txt //less effective
 
-2.
+2. another technique
+cat alive.txt|while read d;do echo $d'/article?id=2'| httpx -ms '"status":500'|tee -a apachespringboothttpx.txt;done

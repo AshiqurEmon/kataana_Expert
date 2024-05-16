@@ -1,0 +1,6 @@
+1. spring boot recon
+cat alive.txt| httpx -ms '"status":404,"error":"Not Found","path":"/"'|anew apachespringboothttpx.txt
+or
+cat alive.txt| httpx -ms '"status":500,"error":"Internal Server Error","path":"/"'|anew apachespringboothttpx500.txt //less effective
+
+2.
